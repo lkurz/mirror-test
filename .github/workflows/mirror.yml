@@ -3,13 +3,13 @@ name: Mirror to BBKT
 on: [push, delete]
 
 jobs:
-  gitlab:
+  bbkt:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
     - uses: pixta-dev/repository-mirroring-action@v1
       with:
         target_repo_url:
-          lkurz@bitbucket.hdfgroup.org:7999/~lkurz/mirror-test.git
+          git@bitbucket.hdfgroup.org:7999/~lkurz/mirror-test.git
         ssh_private_key:
           ${{ secrets.BBKT_MIRROR_TEST }}
