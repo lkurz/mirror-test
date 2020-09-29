@@ -11,5 +11,5 @@ jobs:
       with:
         REMOTE: 'https://lkurz@bitbucket.hdfgroup.org/scm/~lkurz/mirror-test.git'
         GIT_USERNAME: kurz
-        GIT_PASSWORD: ${{ secrets.BBKT_MIRRO }}
+        GIT_PASSWORD: ${{ secrets.GIT_PASSWORD }}
     
