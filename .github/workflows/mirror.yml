@@ -12,4 +12,4 @@ jobs:
         target_repo_url:
           lkurz@ssh://git@bitbucket.hdfgroup.org:7999/~lkurz/mirror-test.git
         ssh_private_key:
-          ${{ secrets. }}
+          ${{ secrets.BBKT_MIRROR_TEST }}
