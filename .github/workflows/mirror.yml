@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - uses: spyoungtech/mirror-action@master
+    - uses: lkurz/mirror-action@master
       with:
         REMOTE: 'https://lkurz@bitbucket.hdfgroup.org/scm/~lkurz/mirror-test.git'
         GIT_USERNAME: kurz
