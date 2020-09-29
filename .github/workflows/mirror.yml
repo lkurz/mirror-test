@@ -1,4 +1,4 @@
-name: Mirror to BBKT
+name: Mirror to BBKT mirror-test
 
 on: [push, delete]
 
@@ -8,8 +8,8 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - uses: spyoungtech/mirror-action@master
-          with:
-            REMOTE: 'https://bitbucket.hdfgroup.org:7999/~lkurz/mirror-test.git'
-            GIT_USERNAME: kurz
-            GIT_PASSWORD: ${{ secrets.BBKT_MIRRO }}
+      with:
+        REMOTE: 'https://bitbucket.hdfgroup.org:7999/~lkurz/mirror-test.git'
+        GIT_USERNAME: kurz
+        GIT_PASSWORD: ${{ secrets.BBKT_MIRRO }}
     
