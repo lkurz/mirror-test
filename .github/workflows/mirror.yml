@@ -9,7 +9,7 @@ jobs:
     - uses: actions/checkout@v1
     - uses: spyoungtech/mirror-action@master
       with:
-        REMOTE: 'https://bitbucket.hdfgroup.org/~lkurz/mirror-test.git'
+        REMOTE: 'https://lkurz@bitbucket.hdfgroup.org/scm/~lkurz/mirror-test.git'
         GIT_USERNAME: kurz
         GIT_PASSWORD: ${{ secrets.BBKT_MIRRO }}
     
