@@ -1,4 +1,4 @@
-name: Mirror to Gitlab
+name: Mirror to BBKT
 
 on: [push, delete]
 
@@ -10,6 +10,6 @@ jobs:
     - uses: pixta-dev/repository-mirroring-action@v1
       with:
         target_repo_url:
-          https://lkurz@bitbucket.hdfgroup.org:7999/~lkurz/mirror-test.git
+          lkurz@bitbucket.hdfgroup.org:7999/~lkurz/mirror-test.git
         ssh_private_key:
           ${{ secrets.BBKT_MIRROR_TEST }}
