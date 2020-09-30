@@ -10,6 +10,6 @@ jobs:
     - uses: lkurz/mirror-action@master
       with:
         REMOTE: 'https://bitbucket.hdfgroup.org/scm/~lkurz/mirror-test.git'
-        GIT_USERNAME: kurz
+        GIT_USERNAME: ${{ secrets.GIT_USER }}
         GIT_PASSWORD: ${{ secrets.GIT_PASSWORD }}
     
